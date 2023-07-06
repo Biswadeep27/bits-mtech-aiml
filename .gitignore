@@ -130,3 +130,6 @@ dmypy.json
 
 #octave
 octave-workspace
+
+#data
+**data/
