@@ -133,3 +133,6 @@ octave-workspace
 
 #data
 **data/
+
+#ignore .DS_Store
+*.DS_Store
