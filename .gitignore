@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#octave
+octave-workspace
+
+#data
+**data/
