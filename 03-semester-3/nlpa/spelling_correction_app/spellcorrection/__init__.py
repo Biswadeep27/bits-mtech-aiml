@@ -1,6 +1,7 @@
 # Let users know if they're missing any of our hard dependencies
 hard_dependencies = [
     'flask',
+    'flask_cors',
     'spellchecker',
     'language_tool_python',
     'jsonschema',

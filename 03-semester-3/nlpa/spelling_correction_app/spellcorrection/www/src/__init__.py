@@ -4,6 +4,7 @@ from email.message import Message
 from urllib import request
 from urllib.error import HTTPError
 from flask import Flask, jsonify, redirect, url_for, render_template, request, abort
+from flask_cors import CORS
 from werkzeug.middleware.dispatcher import DispatcherMiddleware
 
 from spellcorrection.configuration import conf
@@ -52,6 +53,7 @@ def create_app(test_config = None, testing = False):
 
     app.config["TESTING"] = testing
 
+    cors = CORS(app,resources={r"/*":{"origins" : "*"}}, supports_credentials=True)
 
     @app.route("/", defaults={'path':''})
     @app.route("/<path:path>/")

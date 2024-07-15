@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TextCorrection from './TextCorrection';
+import FileCorrection from './FileCorrection';
+import { Container, Typography, Box } from '@mui/material';
+import './styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="lg">
+      <Box sx={{ textAlign: 'center', mt: 5 }}>
+        <Typography variant="h3" gutterBottom>
+          Spelling Correction App
+        </Typography>
+        <TextCorrection />
+        <FileCorrection />
+      </Box>
+    </Container>
   );
 }
 
