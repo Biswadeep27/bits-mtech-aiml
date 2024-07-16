@@ -78,13 +78,15 @@ def create_app(test_config = None, testing = False):
     def correct_file():
         try:
             files = request.files
+            data = request.data
         except Exception as e:
             return jsonify('No file was given to be uploaded'),400
         try:
             file_upload_dir =  conf.get('backend', 'file_upload_path')
-            corrected_file_dir = conf.get('backend', 'corrected_file_path')
+            #corrected_file_dir = conf.get('backend', 'corrected_file_path')
             corrected_file_base_url = conf.get('webserver','base_url').rstrip('/') + '/output/'
-            model_type = 'language_tool'
+            default_model_type = conf.get('backend', 'model_type')
+            model_type = data.get('model_type', default_model_type)
             corrector = SpellingCorrector(model_type)
 
             file_names = []
@@ -138,9 +140,9 @@ def cached_app(test_config=None, testing=False):
     if not spellcorrection_app:
         web_app = create_app(test_config=test_config, testing=testing)
         file_serve_app = create_file_serve_app()
-        sparkway_app = DispatcherMiddleware(
+        spellcorrection_app = DispatcherMiddleware(
             web_app, {
                 '/output' : file_serve_app
             }
         )
-    return sparkway_app
+    return spellcorrection_app
