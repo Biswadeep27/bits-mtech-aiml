@@ -74,11 +74,22 @@ class SpellingCorrector(object):
             return False
         
     def correct_text_classic(self, input_type : str, input_text : str = None, file_path : str = None, language : str = 'en') -> Optional[str]:
+        # if input_type == 'file':
+        #     print('This model does not support file input. try pyspellchecker or language_tool.')
+        #     return ''
         if input_type == 'file':
-            print('This model does not support file input. try pyspellchecker or language_tool.')
-            return ''
+            input_text = self.read_file(file_path)
         self.tokenize_corpus()
-        return ' '.join(self._correction(word) for word in input_text.split())
+        corrected_text_str = ' '.join(self._correction(word) for word in input_text.split())
+
+        if input_type == 'file':
+            output_dir = conf.get('backend', 'corrected_file_path')
+            file_name = f'corrected_{os.path.split(file_path)[-1]}'
+            output_path = os.path.join(output_dir, file_name)
+            self.write_file(output_path, corrected_text_str)
+            return True
+        else:
+            return corrected_text_str
     
     def correct_text_spellchecker(self, input_type : str, input_text : str = None, file_path : str = None, language : str = 'en'):
         if input_type == 'file':

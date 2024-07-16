@@ -78,15 +78,16 @@ def create_app(test_config = None, testing = False):
     def correct_file():
         try:
             files = request.files
-            data = request.data
+            #data = request.json
         except Exception as e:
             return jsonify('No file was given to be uploaded'),400
         try:
             file_upload_dir =  conf.get('backend', 'file_upload_path')
             #corrected_file_dir = conf.get('backend', 'corrected_file_path')
             corrected_file_base_url = conf.get('webserver','base_url').rstrip('/') + '/output/'
-            default_model_type = conf.get('backend', 'model_type')
-            model_type = data.get('model_type', default_model_type)
+            #default_model_type = conf.get('backend', 'model_type')
+            #model_type = data.get('model_type', default_model_type)
+            model_type = conf.get('backend', 'model_type')
             corrector = SpellingCorrector(model_type)
 
             file_names = []
