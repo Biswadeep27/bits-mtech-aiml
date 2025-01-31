@@ -1,0 +1,40 @@
+databricks_resources:
+  llm_endpoint_name: databricks-meta-llama-3-1-70b-instruct
+  vector_search_endpoint_name: sourcedoc_vs_endpoint_v0
+input_example:
+  messages:
+  - content: What is Snowflake
+    role: user
+  - content: Snowflake is a cloud data platform that allows users to store, analyze,
+      and share data securely
+    role: assistant
+  - content: Does it support streaming?
+    role: user
+llm_config:
+  llm_parameters:
+    max_tokens: 1500
+    temperature: 0.01
+  llm_prompt_template: 'You are a trusted assistant that helps answer questions based
+    only on the provided information. If you do not know the answer to a question,
+    you truthfully say you do not know.  Here is some context which might or might
+    not help you answer: {context}.  Answer directly, do not repeat the question,
+    do not start with something like: the answer to the question, do not add AI in
+    front of your answer, do not say: here is the answer, do not mention the context
+    or the question. Based on this context, answer this question: {question}'
+  llm_prompt_template_variables:
+  - context
+  - question
+retriever_config:
+  chunk_template: 'Passage: {chunk_text}
+
+    '
+  data_pipeline_tag: poc
+  embedding_model: databricks-gte-large-en
+  parameters:
+    k: 3
+    query_type: ann
+  schema:
+    chunk_text: content
+    document_uri: url
+    primary_key: id
+  vector_search_index: beepz_dissertation_draft.bronze_draft.source_pdf_documentation_self_managed_vs_index

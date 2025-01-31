@@ -1,82 +1,96 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference-commands</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference-commands.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/sql/select</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/sql/select.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/constructs/with</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/constructs/with.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/constructs/into</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/constructs/into.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/constructs/from</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/constructs/from.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/constructs/at-before</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/constructs/at-before.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/constructs/join</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/constructs/join.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/constructs/asof-join</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/constructs/asof-join.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/constructs/match_recognize</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/constructs/match_recognize.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/constructs/join-lateral</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/constructs/join-lateral.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/operators-arithmetic</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/operators-arithmetic.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/sql-reference/operators-subquery</loc>
+        <loc>https://docs.snowflake.com/en/sql-reference/operators-subquery.html</loc>
     </url>
     <url>
-        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver15</loc>
-        <lastmod>2024-11-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
+        <loc>https://docs.snowflake.com/en/sql-reference/sql/alter-function.html</loc>
     </url>
     <url>
-        <loc>https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/index.html
-        </loc>
-        <lastmod>2024-11-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16.html</loc>
     </url>
     <url>
-        <loc>https://docs.teradata.com/r/Teradata-SQL-Assistant-for-Windows-User-Guide/October-2018/The-Query-Window/Formatting-a-Query/Language-Definition-Files</loc>
-        <lastmod>2018-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/select-clause-transact-sql?view=sql-server-ver16.html</loc>
     </url>
     <url>
-        <loc>https://docs.getdbt.com/docs/introduction</loc>
-        <lastmod>2024-05-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/select-for-clause-transact-sql?view=sql-server-ver16.html</loc>
     </url>
     <url>
-        <loc>https://docs.snowflake.com/en/developer-guide/sql-api/reference</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver16.html</loc>
     </url>
     <url>
-        <loc>https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/index.html#SQL-Language-reference</loc>
-        <lastmod>2024-11-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/select-window-transact-sql?view=sql-server-ver16.html</loc>
+    </url>
+    <url>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/select-having-transact-sql?view=sql-server-ver16.html</loc>
+    </url>
+    <url>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/select-over-clause-transact-sql?view=sql-server-ver16.html</loc>
+    </url>
+    <url>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/hints-transact-sql-join?view=sql-server-ver16.html</loc>
+    </url>
+    <url>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/hints-transact-sql-query?view=sql-server-ver16.html</loc>
+    </url>
+    <url>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/hints-transact-sql-table?view=sql-server-ver16.html</loc>
+    </url>
+    <url>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/from-transact-sql?view=sql-server-ver16.html</loc>
+    </url>
+    <url>
+        <loc>https://learn.microsoft.com/en-us/sql/t-sql/queries/from-using-pivot-and-unpivot?view=sql-server-ver16.html</loc>
+    </url>
+    <url>
+        <loc>https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/index.html.html</loc>
+    </url>
+    <url>
+        <loc>https://docs.teradata.com/r/Teradata-SQL-Assistant-for-Windows-User-Guide/October-2018/The-Query-Window/Formatting-a-Query/Language-Definition-Files.html</loc>
+    </url>
+    <url>
+        <loc>https://docs.getdbt.com/docs/introduction.html</loc>
+    </url>
+    <url>
+        <loc>https://docs.snowflake.com/en/developer-guide/sql-api/reference.html</loc>
+    </url>
+    <url>
+        <loc>https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/index.html#SQL-Language-reference.html</loc>
     </url>
     <url>
         <loc>https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CASE-Expressions.html</loc>
-        <lastmod>2024-11-13</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
     </url>
     <!-- Add more URLs as needed -->
 </urlset>
