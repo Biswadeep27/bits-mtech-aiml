@@ -8,7 +8,7 @@ input_example:
   - content: Snowflake is a cloud data platform that allows users to store, analyze,
       and share data securely
     role: assistant
-  - content: Does it support streaming?
+  - content: Give me a snowlflake query with date function.
     role: user
 llm_config:
   llm_parameters:
